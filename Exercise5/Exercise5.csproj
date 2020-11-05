@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{3E47BFF9-A8CA-4394-B600-32655F017199}</ProjectGuid>
+    <ProjectGuid>{3352189B-E9BB-4FBE-8919-E40E31DBC7C0}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>MIleStone2</RootNamespace>
-    <AssemblyName>MIleStone2</AssemblyName>
+    <RootNamespace>Exercise5</RootNamespace>
+    <AssemblyName>Exercise5</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -46,20 +46,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="Approximate PI.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Approximate PI.Designer.cs">
+      <DependentUpon>Approximate PI.cs</DependentUpon>
     </Compile>
-    <Compile Include="Model\Catagory.cs" />
-    <Compile Include="Model\IProduct.cs" />
-    <Compile Include="Model\Product.cs" />
-    <Compile Include="Model\ProductsDetails.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="Approximate PI.resx">
+      <DependentUpon>Approximate PI.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{3E47BFF9-A8CA-4394-B600-32655F017199}</ProjectGuid>
+    <ProjectGuid>{2A04669D-4878-4D79-A60B-9A05E2AFB34A}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>MIleStone2</RootNamespace>
-    <AssemblyName>MIleStone2</AssemblyName>
+    <RootNamespace>MilestoneProjectCST117__InventoryList</RootNamespace>
+    <AssemblyName>MilestoneProjectCST117- InventoryList</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -52,10 +52,6 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Model\Catagory.cs" />
-    <Compile Include="Model\IProduct.cs" />
-    <Compile Include="Model\Product.cs" />
-    <Compile Include="Model\ProductsDetails.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
