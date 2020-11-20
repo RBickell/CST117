@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{2A04669D-4878-4D79-A60B-9A05E2AFB34A}</ProjectGuid>
+    <ProjectGuid>{05A74D7D-AB35-4DBA-876C-0A91DB37CBFE}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>MilestoneProjectCST117__InventoryList</RootNamespace>
-    <AssemblyName>MilestoneProjectCST117- InventoryList</AssemblyName>
+    <RootNamespace>Project4_Tic_Tac_Toe</RootNamespace>
+    <AssemblyName>Project4-Tic Tac Toe</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -46,57 +46,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Calculator.cs" />
-    <Compile Include="FrmEditInventory.cs">
+    <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmEditInventory.Designer.cs">
-      <DependentUpon>FrmEditInventory.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FrmDeleteInventory.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmDeleteInventory.Designer.cs">
-      <DependentUpon>FrmDeleteInventory.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FrmAddInventory.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmAddInventory.Designer.cs">
-      <DependentUpon>FrmAddInventory.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FrmTestbed1.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmTestbed1.Designer.cs">
-      <DependentUpon>FrmTestbed1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UserInputForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="UserInputForm.Designer.cs">
-      <DependentUpon>UserInputForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Product.cs" />
-    <Compile Include="FrmInventoryList.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmInventoryList.Designer.cs">
-      <DependentUpon>FrmInventoryList.cs</DependentUpon>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="FrmDeleteInventory.resx">
-      <DependentUpon>FrmDeleteInventory.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FrmAddInventory.resx">
-      <DependentUpon>FrmAddInventory.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FrmEditInventory.resx">
-      <DependentUpon>FrmEditInventory.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FrmInventoryList.resx">
-      <DependentUpon>FrmInventoryList.cs</DependentUpon>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -107,9 +66,6 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="UserInputForm.resx">
-      <DependentUpon>UserInputForm.cs</DependentUpon>
-    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
