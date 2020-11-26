@@ -7,39 +7,50 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
+//Summary:
+// This screen holds the button click code for the Add Inventory screen
 namespace MilestoneProjectCST117__InventoryList
 {
-    
+
     public partial class FrmAddInventory : Form
     {
         public FrmAddInventory()
         {
             InitializeComponent();
         }
+        
+        //Declaration code:
         private int NID;
-        DataTable tbl = new DataTable();
 
+        
+        //Button Click code:
+        private void BtnAddInventory_Click(object sender, EventArgs e)
+        {
+            int ct = Program.LstPrd.Count;
+            Product prd = new Product(Product.GetNewID(), TBProductName.Text, TBCategory.Text, NUDPrice.Value, NUDAddStock.Value, NUDPrice.Value * NUDAddStock.Value);
+            Program.LstPrd.Add(prd);
+
+
+            if (Program.LstPrd.Count > ct)
+            {
+                MessageBox.Show("Product has been added", "Success", MessageBoxButtons.OK);
+            }
+            else
+            {
+                MessageBox.Show("Product not added", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            TBProductName.Clear();
+            TBCategory.Clear();
+            NUDPrice.Value = 0;
+            NUDAddStock.Value = 0;
+            File.AppendAllText(Program.inputfile, System.Environment.NewLine + Convert.ToString(prd.ID) + "," + prd.ProductName + "," + prd.Category + "," + Convert.ToString(prd.Price) + "," + Convert.ToString(prd.AddInStock) + "," + Convert.ToString(prd.CostInStock));
+
+        }
         private void btnCloseAddScreen_Click(object sender, EventArgs e)
         {
             this.Close();
-        }
-
-        private void BtnAddInventory_Click(object sender, EventArgs e)
-        {
-            string inputfile = "C:\\Users\\Raymo\\source\\repos\\CST117\\MilestoneProjectCST117- InventoryList\\ProductStorage.csv";
-            Product prd = new Product();
-            prd.ID = NID++;
-            prd.Name = TBProductName.Text;
-            prd.Category = TBCategory.Text;
-            prd.Price = NUDPrice.Value;
-            prd.AddToStock = NUDAddStock.Value;
-            prd.Dt = Program.PopulateDataTable();
-            prd.Intputfile = inputfile;
-
-            Product.ProductDetails prddet = new Product.ProductDetails();
-            MessageBox.Show(prddet.Add(prd));
-
         }
     }
 }

@@ -73,6 +73,11 @@
             this.NUDPrice.DecimalPlaces = 2;
             this.NUDPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.NUDPrice.Location = new System.Drawing.Point(578, 107);
+            this.NUDPrice.Maximum = new decimal(new int[] {
+            20000,
+            0,
+            0,
+            0});
             this.NUDPrice.Name = "NUDPrice";
             this.NUDPrice.Size = new System.Drawing.Size(120, 26);
             this.NUDPrice.TabIndex = 2;
@@ -199,6 +204,7 @@
             this.Controls.Add(this.ProductNameLabel);
             this.Controls.Add(this.ProductIDLabel);
             this.Name = "FrmAddInventory";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Add to Inventory";
             ((System.ComponentModel.ISupportInitialize)(this.NUDAddStock)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.NUDPrice)).EndInit();

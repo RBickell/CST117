@@ -1,11 +1,14 @@
 ID,Product Name,Category,Price,Total In Stock,Cost In Stock
-1,Desk,Furniture,495,660,326700
-2,Chairs,Furniture,375,660,247500
+1,Desk,Furniture,495,600,297000
+2,Chairs,Furniture,375,600,225000
 3,CPU Dell,Computer,579,300,173700
 4,CPU HP,Computer,799,300,239700
-5,Monitors,Computer,79.99,660,52793.4
-6,Keyboards,Computer,19.99,660,13193.4
-7,Mouse,Computer,9.88,660,6520.8
-8,Headsets,Headsets,25.95,660,17127
-9,Phone Avaya,Phones,98.97,660,65320.2
-0,PowerStrips,Electric,19.99,0,0.002,VDI Cords,Cords,0.84,0,0.00
+5,Monitors,Computer,79.99,600,47994.00
+6,Keyboards,Computer,19.99,600,11994.00
+7,Mouse,Computer,9.88,600,5928.00
+8,Headsets,Headsets,25.95,600,15570.00
+9,Phones Avaya,Phones,98.97,600,59382.00
+10,Ethernet cords,Electric,19.99,1200,23988.00
+11,VDI Cords,Cords,13.99,1200,16788.00
+12,Powerstrips,Monitors,196,600,117600
+13,TVs,Furniture,10,50,500

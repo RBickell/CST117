@@ -12,7 +12,7 @@ namespace MilestoneProjectCST117__InventoryList
 {
     public partial class UserInputForm : Form
     {
-        FrmInventoryList invFrm;
+        FormMain invFrm;
         public UserInputForm()
         {
             InitializeComponent();
@@ -25,14 +25,14 @@ namespace MilestoneProjectCST117__InventoryList
 
         private void btnCreateForm_Click(object sender, EventArgs e)
         {
-            invFrm = new FrmInventoryList();
+            invFrm = new FormMain();
             invFrm.Show();
 
         }
 
         private void buttonCreatInvForm2_Click(object sender, EventArgs e)
         {
-            invFrm = new FrmInventoryList();
+            invFrm = new FormMain();
             invFrm.Show();
         }
 
